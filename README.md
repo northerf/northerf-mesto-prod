@@ -1,2 +1,2 @@
-https://github.com/northerf/mesto-ad - ссылка на приватный репозиторий
+https://northerf.github.io/northerf-mesto-prod/ - ссылка на опубликованный проект
 tg: @da1kir1, если что-то потребуется, напишите мне
