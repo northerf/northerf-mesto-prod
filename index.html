@@ -8,8 +8,8 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-CEyytZMs.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-D2z4Cjqv.css">
+    <script type="module" crossorigin src="./assets/index-vuE16IRU.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BmsGYU3v.css">
   </head>
   <body class="page">
     <div class="page__content">
@@ -158,13 +158,48 @@
           </form>
         </div>
       </div>
+
+      <div class="popup popup_type_remove-card">
+        <div class="popup__content">
+          <button type="button" class="popup__close"></button>
+          <h3 class="popup__title">Вы уверены?</h3>
+          <button type="button" class="button popup__button popup__button_type_confirm">
+            Да
+          </button>
+        </div>
+      </div>
+
+      <div class="popup popup_type_info">
+        <div class="popup__content popup__content_content_info">
+          <button type="button" class="popup__close"></button>
+          <h3 class="popup__title">Информация о карточке</h3>
+          <ul class="popup__info-list popup__list"></ul>
+          <p class="popup__likes-title popup__likes-title_hidden">Лайкнули:</p>
+          <ul class="popup__likes-list popup__list"></ul>
+        </div>
+      </div>
+
     </div>
+
+    <template id="popup-info-definition-template">
+      <li class="popup__list-item">
+        <p class="popup__info-term"></p>
+        <p class="popup__info-description"></p>
+      </li>
+    </template>
+
+    <template id="popup-info-user-preview-template">
+      <li class="popup__list-item popup__list-item_type_badge">
+        <p class="popup__info-item"></p>
+      </li>
+    </template>
 
 
     <template id="card-template">
       <li class="places__item card">
         <img class="card__image" src="" alt="" />
         <div class="card__control">
+          <button type="button" class="card__control-button card__control-button_type_info"></button>
           <button type="button" class="card__control-button card__control-button_type_delete"></button>
         </div>
         <div class="card__description">
